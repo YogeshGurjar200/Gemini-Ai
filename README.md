@@ -1,12 +1,47 @@
-# React + Vite
+# Gemini AI Chat Application (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Gemini-style conversational AI chat application built with **React**, **Vite**, **Redux Toolkit**, **React Hook Form + Zod**, **Tai lwind CSS**, and **DaisyUI**.  
+Features OTP-based authentication, login, logout, toggle dark theme, chatroom management, throttled search, , infinite scroll, and form validation.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+[🔗 Live Link](https://gemini-ai-steel.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📌 Project Overview
+
+This project replicates a Gemini-style conversational AI interface with the following key features:
+
+- **OTP Authentication** (Login/Signup) with country codes.
+- **Country code fetching** from `restcountries.com` API.
+- **Chatroom listing & search** with debounced filtering.
+- **Infinite Scroll** for chatrooms.
+- **Form validation** using React Hook Form + Zod.
+- **Theming support** via DaisyUI.
+- **State management** via Redux Toolkit.
+- **LocalStorage persistence** for authentication ,theme and Chatroom state.
+- **Responsive UI** optimized for mobile and desktop.
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend Framework:** React + Vite
+- **UI Library:** DaisyUI (Tailwind CSS)
+- **State Management:** Redux Toolkit
+- **Form Handling:** React Hook Form + Zod
+- **Icons:** React Icons
+- **API Client:** Axios
+- **Routing:** React Router DOM
+- **Build Tool:** Vite
+
+---
+
+## ⚙️ Setup & Run Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/your-repo-name.git
+   cd your-repo-name
