@@ -136,7 +136,7 @@ const Dashboard = () => {
         ></div>
       )}
 
-      <div className="flex h-screen ">
+      <div className="flex">
         {/* Sidebar */}
 
         <div
