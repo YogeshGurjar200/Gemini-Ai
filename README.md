@@ -43,5 +43,56 @@ This project replicates a Gemini-style conversational AI interface with the foll
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/YogeshGurjar200/Gemini-Ai.git
+   cd Gemini-Ai-main
+   npm install
+   npm run dev
+
+
+
+🔍 Feature Implementation Details
+|
+1️⃣ OTP Authentication
+Simulated OTP send & verify using setTimeout.
+
+Country codes & flags fetched from restcountries.com.
+
+Auth state persistence in LocalStorage:
+
+json
+Copy
+Edit
+{
+  "isLoggedIn": true,
+  "user": {
+    "countryCode": "+91",
+    "phone": "9876543210",
+    "otp": "123456"
+  }
+}
+2️⃣ Throttled Search
+Implemented with a custom useDebounce hook to prevent excessive API calls.
+
+Updates the chatroom list only after the user stops typing for a set delay.
+
+3️⃣ Infinite Scroll
+Chatroom data loaded in small chunks to optimize performance.
+
+Desktop view: Uses traditional pagination.
+
+Mobile view: Infinite scroll.
+
+Trigger mechanism: A scroll event listener detects when the user reaches the bottom and fetches the next set of data.
+
+4️⃣ Form Validation
+Implemented using React Hook Form + Zod.
+
+Phone & OTP fields accept numbers only:
+
+
+z.string().regex(/^\d+$/, "Digits only")
+Real-time error messages for instant feedback.
+
+
+
+   
