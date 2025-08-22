@@ -5,7 +5,7 @@ export default function ThemeToggle() {
   const theme = useSelector((state) => state.theme.value);
   const dispatch = useDispatch();
 
-  const themes = ["forest", "dark", "light"];
+  const themes = ["bumblebee", "forest", "dark", "light"];
 
   return (
     <select

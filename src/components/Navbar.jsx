@@ -17,15 +17,6 @@ function Navbar({ setSidebarOpen, sidebarOpen }) {
   };
   return (
     <div className="navbar flex justify-between bg-base-100">
-      <div className=" sm:hidden flex-1">
-        <button
-          onClick={() => setSidebarOpen(!sidebarOpen)}
-          className="btn btn-ghost btn-sm"
-        >
-          {!sidebarOpen && <HiMenu size={20} />}
-        </button>
-      </div>
-
       <div className="flex-1">
         <a className="btn btn-ghost normal-case text-xl">Gemini </a>
       </div>
