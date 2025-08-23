@@ -17,7 +17,7 @@ import { FiCopy } from "react-icons/fi";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const chatrooms = useSelector((state) => state.chatrooms?.list);
